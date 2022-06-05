@@ -1,0 +1,61 @@
+:root {
+  --main-hue: 13; /*主色调*/
+  /* 颜色，这些是根据上面的颜色配好的具体使用色 */
+  --line-color: hsl(12, 60%, 43%);
+  --fill-color: #333;
+  --gap-color:#777;
+  --bg-color: hsl(0, 10%, 25%);
+  --font-color:hsl(0,0%,0%);
+
+  --actived-color:hsl(0,100%,25%);
+  --bg-footer-color:hsl(120,0%,93%);
+
+  /* 颜色，这些是根据上面的颜色配好的具体使用色 */
+  --line-color: hsl(12, 60%, 43%);
+  --fill-color: var(--gray-color);
+  --bg-color: hsl(var(--main-hue), 50%, 20%);
+  
+  /* // 按钮缺省 */
+  --btn-text-color: hsl(var(--main-hue), 50%, 20%);
+  --btn-bg-color: hsl(var(--main-hue), 50%, 20%);
+  --btn-hover-color: hsl(var(--main-hue), 50%, 20%);
+}
+/**基本的清空设置 */
+*{
+  margin:0px;
+  padding: 0px;
+  border:0px;
+  outline-style: none;
+  background-color:none;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family: Arial, Verdana, Tahoma, Helvetica, sans-serif;
+  color:var(--font-color);
+  text-align:justify;
+
+  /**文字*/
+  white-space:nowrap;/* 不换行*/
+  overflow:hidden; /*溢出后hidden*/
+  text-overflow:clip;/* 文字溢出后表现形式 clip ellipsis*/
+  word-wrap: break-word;
+}
+/**清空a元素的样式 */
+a:link,a:visited,a:hover,a:active {  text-decoration:none;}
+/* 文本效果 text-shadow box-shadow text-overflow word-wrap word-break*/
+
+.fineline{
+  box-shadow: 0 0 0 0 0.33px var(--line-color);
+}
+
+/*  */
+.adi-container{
+
+}
+.adi-footer{
+  position:fixed;
+  bottom:0px;
+  left:0px;
+  right:0px;
+  z-index:100;
+  background-color: var(--bg-footer-color);
+}

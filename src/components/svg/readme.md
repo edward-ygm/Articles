@@ -1,0 +1,3 @@
+SearchIcon
+这个目录下记录所有的svg的相关图片。
+一般需要记录linecolor，fillcolor，linewidth。 linewidth 过大有可能会让图像缺失一部分图形，这个由svg设计者来设置。

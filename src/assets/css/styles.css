@@ -1,0 +1,209 @@
+/**清空a元素的样式 */
+a:link,a:visited,a:hover,a:active {  text-decoration:none; }
+*,*:hover{
+  box-sizing: border-box;
+}
+/*****************************************************************************/
+/* 布局 */
+/**flex-box*/
+  .adi-box{
+      display:flex;
+      flex-direction:row;/*内容主轴上的布局*/
+      justify-content: space-between;/*内容对齐 flex-start | flex-end | center | space-between | space-around*/
+      align-items: center;/**第二主轴对齐方式flex-start | flex-end | center | space-between | space-around*/
+      flex-wrap: nowrap;/**元素换行方式 nowrap|wrap|wrap-reverse|initial|inherit;*/
+      overflow: hidden; 
+
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+  }
+  .adi-box-col{
+      display:flex;
+      flex-direction: column;
+      justify-content: space-between;/*内容对齐 flex-start | flex-end | center | space-between | space-around*/
+      /*align-items: center;*//**第二主轴对齐方式flex-start | flex-end | center | space-between | space-around*/
+      flex-wrap: nowrap;/**元素换行方式 nowrap|wrap|wrap-reverse|initial|inherit;*/
+      overflow: hidden; 
+
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+  }
+  .adi-box-mid{
+    /* flex 属性用于指定弹性子元素如何分配空间。 flex:flex-grow,flex-shrink,flex-basis*/
+    flex-grow:1;
+    flex-shrink:0;
+    /* flex-basis:67px;*/ /*定义基准 */
+
+    box-sizing: border-box;
+    /* margin-top:80px; */
+    padding-bottom: 0px;/**为绝对布局预留位置*/
+  }
+
+  .adi-card{
+    
+  }
+
+.adi-input
+{
+  box-shadow: 0px 0px 0px 0.333px #97c4e9 inset;
+  background-color: #fff;
+
+  /**设置字体 */
+  font-family: 'Times New Roman', Times, serif;
+  color: #222;
+  z-index: 1;
+  border-color: #66afe9;
+  box-sizing: border-box;
+}
+.adi-input:focus{
+  /* 输入框点击发光效果 */
+  border-color: #66afe9;
+  box-shadow: 0 1px 1px 0.333px #97c4e9 inset;
+}
+.adi-input:hover{
+  border-color: #66afe9;
+  cursor:text;
+}
+
+/* flex box */
+.adi-flex-column,
+.adi-flex{
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;/**第二主轴对齐方式flex-start | flex-end | center | space-between | space-around*/
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+}
+.adi-flex .el-link{
+  font-size:16px;
+}
+.adi-flex-column{
+  flex-direction: column;
+}
+
+/* position absolute 定位 */
+.adi-box-relative{
+  position:relative;
+  height:auto;
+  min-height: 100%;
+}
+.adi-top{
+  position:sticky;  
+  width:100%;
+  left:0px;
+  top:0px;
+  height:78px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.adi-mid{
+  box-sizing: border-box;
+  padding-bottom: 87px;
+}
+.adi-footer {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  height:98px;
+  z-index: 100;
+  background-color: var(--bg-footer-color);
+}
+/***************************************************************************************************/
+/* 文本 */
+  /**采用div来写文字。*/
+  .adi-words{
+    table-layout: fixed;
+    word-wrap: break-word;
+    overflow: hidden;
+
+    /**预留一个margin以实现box-shadow的效果
+    实际上margin的大小可以限制box-shadow的大小*/
+    /* box-shadow: 0 0 0 0.3px blue;
+    margin:0.3px; */
+    /**font等字体处理*/
+    /* color:grey; */
+    text-align: left;
+    padding-left: 1px;
+
+    /* 让文字垂直居中 */
+    display: flex;
+    align-items: center;
+}
+.adi-fineline{
+    /**预留一个margin以实现box-shadow的效果
+    实际上margin的大小可以限制box-shadow的大小*/
+    box-shadow: 0 0 0 0.3px blue;
+    margin:1px;
+}
+
+/*所有的文字都采用这个section来断句*/
+.adi-section{
+    display:inline-block;
+    background-color: yellow;
+}
+/**为什么要执着bootstrap用不了，elementUI不好用呢？直接自己网上抄袭一个dropdown*/
+/**
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+*/
+/***************************************************************************************************/
+/* 特色效果 */
+/* 文本效果 text-shadow box-shadow text-overflow word-wrap word-break*/
+.adi-fineline{
+  box-shadow: 0 0 0 0 0.33px var(--line-color);
+}
+/*border-glowing 这个不仅是针对button，对其他所有的都可以有呼吸的效果*/
+.adi-border-glow {
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: adi-glowing; 
+}
+.adi-border-glow:active, .adi-border-glow.active, .adi-border-glow.is-active {
+    animation-name: none; 
+}
+@keyframes adi-glowing {
+from {
+    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3); }
+50% {
+    box-shadow: 0 0 3px rgba(44, 154, 219, 0.8); }
+to {
+    box-shadow: 0 0 0 rgba(44, 154, 219, 0.3); } }
+    

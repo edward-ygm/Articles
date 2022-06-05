@@ -1,0 +1,77 @@
+{
+  "name": "artpro",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@wangeditor/editor": "^5.1.1",
+    "@wangeditor/editor-for-react": "^1.0.3",
+    "@wangeditor/editor-for-vue": "^1.0.1",
+    "aes-js": "^3.1.2",
+    "axios": "^0.23.0",
+    "babel-polyfill": "^6.26.0",
+    "cheerio": "^1.0.0-rc.10",
+    "core-js": "^3.6.5",
+    "crypto-js": "^4.1.1",
+    "echart": "^0.1.3",
+    "echarts": "^5.2.2",
+    "element-ui": "^2.15.6",
+    "jsencrypt": "^3.2.1",
+    "less": "^4.1.2",
+    "popper.js": "^1.16.1",
+    "qs.js": "^0.1.12",
+    "quill": "^1.3.7",
+    "sass-loader": "^10.2.0",
+    "svg-sprite-loader": "^6.0.10",
+    "vue": "^2.6.11",
+    "vue-avatar": "^2.3.3",
+    "vue-avatar-cropper": "^5.0.2",
+    "vue-axios": "^3.4.0",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.5.3"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^5.1.3",
+    "ejs": "^3.1.6",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "jquery": "^3.6.0",
+    "node-sass": "^6.0.1",
+    "vue-template-compiler": "^2.6.11",
+    "webpack": "^4.46.0"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {
+      "generator-star-spacing": "off",
+      "no-tabs": "off",
+      "no-unused-vars": "off",
+      "no-console": "off",
+      "no-irregular-whitespace": "off",
+      "no-debugger": "off"
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
